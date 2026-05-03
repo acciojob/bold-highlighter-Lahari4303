@@ -1,8 +1,13 @@
-let target=document.querySelectAll("strong")
+let target = document.querySelectorAll("strong");
+
 function highlight() {
-    //Write your code here
-		target.style.color="green"
+    target.forEach((element) => {
+        element.style.color = "green";
+    });
 }
+
 function return_normal() {
-    target.style.color="black"
+    target.forEach((element) => {
+        element.style.color = "black";
+    });
 }
